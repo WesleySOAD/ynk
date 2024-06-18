@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel Usuário | L2 Yankee 75x</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <script src="/js/loja.js" async></script>
+
+    
+  </head>
+  <body>
+
+
+    <!--<div id="background">
+      <video loop autoplay muted>
+        <source src="/assets/bg3.mp4">
+      </video>
+    </div>
+  -->
+    
+    <div class="container">
+      
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Logo" />
+            <h2>L2<span class="primary">YANKEE</span></h2>
+           
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+            
+          </div>
+        </div>
+        
+
+
+        
+  
+        <div class="sidebar">
+          
+          <a href="/index.html" >
+            <span class="material-icons-sharp"> home </span>
+            <h3>Home</h3>
+          </a>
+          <a href="#" class="active">
+            <span class="material-icons-sharp"> payments </span>
+            <h3>Comprar Ticket</h3>
+          </a>
+          <a href="/shop.html">
+            <span class="material-icons-sharp"> receipt_long </span>
+            <h3>Shop Donate</h3>
+          </a>
+         
+          
+          <a href="/reports.html">
+            <span class="material-icons-sharp"> report_gmailerrorred </span>
+            <h3>Reports</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp"> settings </span>
+            <h3>Settings</h3>
+          </a>
+          
+          <a href="#">
+            <span class="material-icons-sharp"> logout </span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+        
+      </aside>
+
+      <main>
+        <h1>PAINEL DO USUÁRIO <span>| L2 YANKEE 75x</span> <div class="right">
+          <div class="top">
+            <button id="menu-btn">
+              <span class="material-icons-sharp"> menu </span>
+            </button>
+            <div class="theme-toggler">
+              <span class="material-icons-sharp active"> light_mode </span>
+              <span class="material-icons-sharp"> dark_mode </span>
+            </div>
+            <div class="profile">
+              <div class="info">
+                <p>Hey, <b>Glock</b></p>
+                <small class="text-muted">Admin</small>
+              </div>
+              <div class="profile-photo">
+                <img src="./images/profile-1.jpg" alt="Profile Picture" />
+              </div>
+            </div>
+          </div>
+        </div> </h1>
+
+<!-- partial:index.partial.html -->
+
+
+<main class="main-section">
+
+  <section class="container normal-section">
+    <h2 class="section-title"></h2>
+
+    <div class="products-container">
+      <div class="movie-product">
+        <strong class="product-title">TICKET DONATE YNK </strong>
+        <!-- <br> -->
+        <img src="images/coin.png" alt="Camiseta" class="product-image">
+        <div class="product-price-container">
+          <span class="product-price">R$1,00</span>
+          <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+        </div>
+        <br>
+        <p>Unidade, <b>Ticket Yankee</b></p>
+      </div>
+
+      <div class="movie-product">
+        <strong class="product-title">PACK #YNK 1</strong>
+        <!-- <br> -->
+        <img src="images/bau.png" alt="Miniatura" class="product-image">
+        <div class="product-price-container">
+          <span class="product-price">R$45,90</span>
+          <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+        </div>
+        <br>
+        <p>Pack Contém, <b>55 Ticket Yankee</b></p>
+        <br>
+      </div>
+     
+      
+    </div>
+  </section>
+
+  <section class="container normal-section">
+    <h2 class="section-title"></h2>
+    <table class="cart-table">
+          <td colspan="3" class="cart-total-container">
+            <strong>Total</strong>
+            <span>R$0,00</span>
+          </td>
+      </tfoot>
+    </table>
+    <button type="button" class="purchase-button">Finalizar Compra</button>
+
+  </section>
+</main>
+
+
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="/js/script.js"></script>
+    <script src="./constants/recent-order-data.js"></script>
+    <script src="./constants/update-data.js"></script>
+    <script src="./constants/sales-analytics-data.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

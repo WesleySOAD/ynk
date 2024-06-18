@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel Usuário | L2 Yankee 75x</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <script src="/js/loja.js" async></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Logo" />
+            <h2>L2<span class="primary"> YANKEE</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+
+        
+        <div class="sidebar">
+          <a href="/index.html">
+            <span class="material-icons-sharp"> home </span>
+            <h3>Home</h3>
+          </a>
+          <a href="/payments.html">
+            <span class="material-icons-sharp"> payments </span>
+            <h3>Comprar Ticket</h3>
+          </a>
+          <a href="/shop.html">
+            <span class="material-icons-sharp"> receipt_long </span>
+            <h3>Shop Donate</h3>
+          </a>
+
+          
+          <a href="/reports.html">
+            <span class="material-icons-sharp"> report_gmailerrorred </span>
+            <h3>Reports</h3>
+          </a>
+          <a href="/config.html" class="active">
+            <span class="material-icons-sharp"> settings </span>
+            <h3>Configuração</h3>
+          </a>
+          
+          <a href="/Login/index.html">
+            <span class="material-icons-sharp"> logout </span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <main>
+        <h1>PAINEL DO USUÁRIO <span>| L2 YANKEE 75x</span> </h1>
+<br>
+        <h2>| REPORTS</span> </h2>
+        <br>
+        <div class="insights">  
+          <section>
+            <h2>RESET PASSWORD</h2>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+              <button type="submit">Enviar</button>
+                <input type="hidden" name="accessKey" value="e9fdb207-6248-40c8-8c9d-f97501c18f68">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5501/obrigado.html">
+            </form>
+        </section>
+      </main>
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp"> menu </span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-icons-sharp active"> light_mode </span>
+            <span class="material-icons-sharp"> dark_mode </span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>Glock</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="./images/profile-1.jpg" alt="Profile Picture" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./constants/recent-order-data.js"></script>
+    <script src="./constants/update-data.js"></script>
+    <script src="./constants/sales-analytics-data.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

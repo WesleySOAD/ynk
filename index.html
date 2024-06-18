@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel Usuário | L2 Yankee 75x</title>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/global.css" />
+    <script src="/js/loja.js" async></script>
+  </head>
+  <body>
+
+
+
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./images/logo.png" alt="Logo" />
+            <h2>L2<span class="primary"> YANKEE</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp"> close </span>
+          </div>
+        </div>
+
+        
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-icons-sharp"> home </span>
+            <h3>Home</h3>
+          </a>
+          <a href="/payments.html">
+            <span class="material-icons-sharp"> payments </span>
+            <h3>Comprar Ticket</h3>
+          </a>
+          <a href="/shop.html">
+            <span class="material-icons-sharp"> receipt_long </span>
+            <h3>Shop Donate</h3>
+          </a>
+         
+          <a href="/reports.html">
+            <span class="material-icons-sharp"> report_gmailerrorred </span>
+            <h3>Reports</h3>
+          </a>
+          <a href="/config.html">
+            <span class="material-icons-sharp"> settings </span>
+            <h3>Settings</h3>
+          </a>
+          
+          <a href="/Login/index.html">
+            <span class="material-icons-sharp"> logout </span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <main>
+        <h1>PAINEL DO USUÁRIO <span>| L2 YANKEE 75x</span> </h1>
+
+        
+        <div class="insights">
+          <!-- SALDO -->
+          <div class="sales">
+            <span class="material-icons-sharp"> paid </span>
+            <div class="middle">
+              <div class="left">
+                <h3>SALDO TICKET'S</h3>
+                <h1>300</h1>
+              </div>
+              <div class="progress">
+                <img src="./images/money (2).png" alt="SALDO TICKET'S"/>
+                <div class="number">               
+                </div>
+              </div>
+            </div>
+            <small class="text-muted"> Last 24 hours </small>
+          </div>
+
+          <!-- TRANSFERIR -->
+          <div class="expenses">
+            <span class="material-icons-sharp"> currency_exchange </span>
+            <div class="middle">
+              <div class="left">
+                <h3>SALDO IN GAME</h3>
+                <h1>0</h1>
+              </div>
+              <div class="progress">
+                <img src="./images/money (1).png" alt="SALDO TICKET'S" />
+                <div class="number">
+                </div>
+              </div>
+            </div>
+            <small class="text-muted"> Transfira Seus Ticket's </small>
+          </div>
+
+          <!-- PERSONAGEM -->
+          <div class="income">
+            <div class="middle">
+              <div class="left">
+                <div class="item add-product">
+                  <div>
+                    <span class="material-icons-sharp"></span>
+                    <small>Online</small>
+                  </div>
+                </div>
+                
+              </div>
+              <div class="left">
+                <h3>Human Fighter</h3>
+                <h1>Sagittarius</h1>
+                <h3>PvP 222 | PK 22</h3>
+              </div>
+              <div class="progress">
+                <img src="./images/personagem.png" alt="" />Baron - Lv. 80
+                <h1> Glock</h1>
+                <div class="number">
+                </div><h3></h3>
+              </div>
+            </div>
+            <small class="text-muted"> último login 18:18  10/06/2024 </small>
+          </div>
+        </div>
+
+        <div class="recent-orders">
+          <h2>ÚLTIMOS ACESSOS AO PAINEL</h2>
+          <table id="recent-orders--table">
+            <thead>
+              <tr>
+                <th>IP</th>
+                <th>SERVER</th>
+                <th>DATA</th>
+                <th>HORA</th>
+                <th></th>
+              </tr>
+            </thead>
+            <!-- Add tbody here | JS insertion -->
+          </table>
+          <a href="#">Show All</a>
+        </div>
+      </main>
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp"> menu </span>
+          </button>
+          <div class="theme-toggler">
+            <span class="material-icons-sharp active"> light_mode </span>
+            <span class="material-icons-sharp"> dark_mode </span>
+          </div>
+          <div class="profile">
+            <div class="info">
+              <p>Hey, <b>Glock</b></p>
+              <small class="text-muted">Admin</small>
+            </div>
+            <div class="profile-photo">
+              <img src="./images/profile-1.jpg" alt="Profile Picture" />
+            </div>
+          </div>
+        </div>
+
+        <div class="recent-updates">
+          <h2>Recent Updates</h2>
+          <!-- Add updates div here | JS insertion -->
+        </div>
+
+        <div class="sales-analytics">
+          <h2>Recent Transactions</h2>
+          <div id="analytics">
+            <!-- Add items div here | JS insertion -->
+          </div>
+          <div class="item add-product">
+            <div>
+              <span class="material-icons-sharp"> add </span>
+              <h3>TRANSFERIR TICKET'S YANKEE</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./constants/recent-order-data.js"></script>
+    <script src="./constants/update-data.js"></script>
+    <script src="./constants/sales-analytics-data.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

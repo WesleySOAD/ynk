@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  background: linear-gradient(to bottom, #b7beff, #7380ec);
+  height: 100vh;
+  display: grid;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+  place-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f3f3;
+  width: 100%;
+  max-width: 400px;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: -20px -20px 60px #94a2f3,
+    20px 20px 60px #7380ec;
+}
+
+.card-title {
+  font-size: 20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #565656;
+  align-items: center;
+}
+
+.card-subtitle {
+  color: #565656;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.card-input-container {
+  position: relative;
+  margin: 0.5rem 0 2rem;
+  width: 100%;
+}
+
+.card-form label {
+  color: #b6b6b6;
+}
+
+.card-input-container input::placeholder {
+  color: #b6b6b6;
+}
+
+.card-input-container input,
+.card-button {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
+}
+
+.card-input-container input {
+  padding: 1em 2em 1em 4em;
+  font-size: 14px;
+  color: #b6b6b6;
+  background: #f4f4f4;
+  box-shadow: -10px -10px 20px rgb(255, 255, 255),
+    10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-input-container input:focus {
+  box-shadow: inset -5px -5px 10px rgb(255, 255, 255),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-button {
+  background: #565656;
+  padding: 1em;
+  color: #f4f4f4;
+  cursor: pointer;
+  box-shadow: -10px -10px 20px rgb(255, 255, 255),
+    10px 10px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1.5rem;
+}
+
+.card-button:focus,
+.card-button:hover {
+  box-shadow: inset -5px -5px 10px rgba(39, 78, 76, 0.4),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card-forgot-password {
+  text-align: center;
+  font-size: 12px;
+  color: #b6b6b6;
+}
+
+.card-forgot-password a {
+  color: #565656;
+}
+.card-forgot-password a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card-input-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 1.3rem;
+  top: 0.8rem;
+  font-size: 20px;
+  color: #b6b6b6;
+}
+
+.card-input-container.username::after {
+  content: "\f007";
+}
+
+.card-input-container.password::after {
+  content: "\f023"
+}
+
+.contactButton {
+  background: #7079f0ab;
+  color: #6f7ed3;
+  font-family: inherit;
+  padding: 0.45em;
+  padding-left: 1em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #4a57a0;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3em;
+}
+
+.iconButton {
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7380ec;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.contactButton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em #6f7ed3;
+}
+
+.contactButton:active {
+  transform: translate(0.05em, 1px);
+  box-shadow: 0.05em 0.05em #5d6ece;
+}

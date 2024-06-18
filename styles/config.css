@@ -1,0 +1,23 @@
+
+.iconButton {
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.contactButton:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em #6f7ed3;
+}
+
+.contactButton:active {
+  transform: translate(0.05em, 1px);
+  box-shadow: 0.05em 0.05em #5d6ece;
+}
